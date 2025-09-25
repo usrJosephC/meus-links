@@ -2,7 +2,7 @@
 
 | Modo Claro                               | Modo Escuro                                |
 | ---------------------------------------- | ------------------------------------------ |
-| ![Modo Claro](https://imgur.com/gallery/meus-links-light-mode-BCRG10O) | ![Modo Escuro](https://imgur.com/gallery/meus-links-dark-mode-t4rqNQo) |
+| ![Modo Claro](https://i.imgur.com/Jmyl1j6_d.png?maxwidth=520&shape=thumb&fidelity=high) | ![Modo Escuro](https://i.imgur.com/Dn0D5GY_d.png?maxwidth=520&shape=thumb&fidelity=high) |
 
 
 > Este é um agregador de links pessoal, inspirado no conceito do Linktree, criado para centralizar todas as minhas redes sociais, portfólio e formas de contato em um único lugar. O projeto foi desenvolvido com as tecnologias mais modernas do ecossistema React, incluindo Next.js com App Router e Tailwind CSS para estilização.
