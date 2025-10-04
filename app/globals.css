@@ -1,35 +1,8 @@
-/* app/globals.css */
+@import 'tailwindcss';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  /* Tema Claro (Padrão) */
-  :root {
-    --color-primary: #4f46e5;
-    --color-primary-dark: #3730a3;
-    --color-accent: #10b981;
-    --color-accent-dark: #059669;
-    --color-background-light: #f3f4f6;
-    --color-background-dark: #e5e7eb;
-    --color-text-default: #374151; /* Cinza escuro para texto geral */
-    --color-text-secondary: #6b7280; /* Um cinza um pouco mais claro */
-  }
-
-  /* Tema Escuro */
-  .dark {
-    --color-primary: #a5b4fc;
-    --color-primary-dark: #818cf8;
-    --color-accent: #34d399;
-    --color-accent-dark: #6ee7b7;
-    --color-background-light: #1f2937;
-    --color-background-dark: #111827;
-    --color-text-default: #374151; /* Cinza claro para texto geral */
-    --color-text-secondary: #9ca3af; /* Um cinza um pouco mais escuro */
-  }
-
-  body {
-    background-color: transparent;
-  }
+body {
+  background-image: linear-gradient(to bottom right, #581c87, #ffbc00);
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
 }

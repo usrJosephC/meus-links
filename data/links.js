@@ -1,27 +1,10 @@
+import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
+import { CgWebsite } from "react-icons/cg";
+
 export const links = [
-  
-  {
-    title: "Instagram",
-    url: "https://www.instagram.com/usr.josephc/",
-    icon: "instagram",
-    highlight: false,
-  },
-  {
-    title: "LinkedIn",
-    url: "https://www.linkedin.com/in/joseph-cavalcante/",
-    icon: "linkedin",
-    highlight: false,
-  },
-  {
-    title: "GitHub",
-    url: "https://github.com/usrJosephC",
-    icon: "github",
-    highlight: false,
-  },
-  {
-    title: "Contato",
-    url: "mailto:josephcavalcante.dev@gmail.com",
-    icon: "mail",
-    highlight: true,
-  },
+  { name: "Portfólio", href: "/portfolio", icon: <CgWebsite size={20} /> },
+  { name: "GitHub", href: "https://github.com/usrJosephC", icon: <FaGithub size={20} /> },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/joseph-cavalcante", icon: <FaLinkedin size={20} /> },
+  { name: "Instagram", href: "https://instagram.com/usr.josephc", icon: <FaInstagram size={20} /> },
+  { name: "Email", href: "mailto:josephcavalcante.dev@gmail.com", icon: <FaEnvelope size={20} /> },
 ];

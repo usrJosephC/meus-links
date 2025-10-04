@@ -1,20 +1,20 @@
-import "./globals.css";
-import { ThemeProvider } from "@/components/ThemeProvider";
+import './globals.css'
+import { Inter } from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: "Links Pessoais",
-  description: "Coleção de links pessoais, portfólio e redes sociais.",
-};
+  title: 'Joseph Cavalcante | Desenvolvedor Frontend',
+  description: 'Portfólio de Joseph Cavalcante, desenvolvedor focado em criar experiências digitais marcantes.',
+}
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-BR" suppressHydrationWarning className="h-full w-full">
-      <body className="font-sans h-full w-full text-text-default bg-gradient-to-br from-background-light to-background-dark">
-        <ThemeProvider>
-          {children}
-        </ThemeProvider>
+    <html lang="pt-BR">
+      
+      <body className={inter.className}>
+        {children}
       </body>
     </html>
-  );
+  )
 }
-""
