@@ -1,36 +1,34 @@
-import LinkCard from "@/components/LinkCard";
-import { ThemeToggleButton } from "@/components/ThemeToggleButton";
-import { links } from "@/data/links";
-
-export const metadata = {
-  title: "Meus Links",
-  description: "Acesse minhas redes sociais e portfóflio.",
-  openGraph: {
-    // ... seu openGraph
-  },
-};
+import Image from 'next/image';
+import LinkCard from '@/components/LinkCard';
+import { links } from '@/data/links';
 
 export default function LinksPage() {
   return (
-    <main
-      className="flex min-h-[100vh] flex-col items-center justify-center gap-[2rem] p-[1.5rem]"
+    <main 
+      className="[display:flex] min-h-[100vh] w-[100%] [flex-direction:column] [align-items:center] [justify-content:center] p-[1rem]"
+      style={{
+        backgroundImage: 'linear-gradient(to bottom right, #581c87, #ffbc00)'
+      }}
     >
-      <div className="fixed top-[1.5rem] right-[1.5rem]">
-        <ThemeToggleButton />
-      </div>
+      <div className="[display:flex] [flex-direction:column] [align-items:center] gap-[1rem]">
+        <Image
+          src="/me.jpeg" 
+          alt="Foto de Joseph Cavalcante"
+          width={250}
+          height={250}
+          className="rounded-[9999px] border-[2px] border-[#ffbc00] shadow-[0_8px_16px_rgba(0,0,0,0.25)]"
+        />
 
-      <h1 className="font-display text-[2.25rem] text-[var(--color-primary)] mb-[1rem]">
-        🌐 Meus Links
-      </h1>
+        <div className="[text-align:center]">
+          <h1 className="text-[1.5rem] font-[700] text-white">Joseph Cavalcante</h1>
+          <p className="text-white/[0.8]">Desenvolvedor Frontend e entusiasta de tecnologia</p>
+        </div>
 
-      <p className="font-sans text-[var(--color-text-secondary)] mb-[1.5rem] text-center max-w-[28rem]">
-        Acesse minhas redes sociais, portfóflio e formas de contato em um só lugar.
-      </p>
-
-      <div className="flex flex-col gap-[1rem] w-[100%] max-w-[28rem]">
-        {links.map((link, i) => (
-          <LinkCard key={i} link={link} />
-        ))}
+        <div className="mt-[1rem] [display:flex] w-[100%] max-w-[20rem] [flex-direction:column] gap-[1rem]">
+          {links.map((link) => (
+            <LinkCard key={link.name} href={link.href} title={link.name} icon={link.icon} />
+          ))}
+        </div>
       </div>
     </main>
   );
