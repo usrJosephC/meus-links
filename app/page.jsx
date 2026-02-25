@@ -14,8 +14,8 @@ export default function LinksPage() {
         <Image
           src="/me.jpeg" 
           alt="Foto de Joseph Cavalcante"
-          width={250}
-          height={250}
+          width={200}
+          height={200}
           className="rounded-[9999px] border-[2px] border-[#ffbc00] shadow-[0_8px_16px_rgba(0,0,0,0.25)]"
         />
 
