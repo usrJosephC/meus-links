@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="Cavalcante Tech">
+  <path d="M38 13 H22 L12 23 V41 L22 51 H38"
+        stroke="currentColor" stroke-width="9"
+        stroke-linecap="square" stroke-linejoin="miter"/>
+  <rect x="46" y="25.5" width="10" height="13" rx="2" fill="currentColor"/>
+</svg>
