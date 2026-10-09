@@ -83,7 +83,7 @@ export const education = [
     title: "Ciência da Computação",
     place: "Afya UNIMA",
     period: "2023 — presente",
-    detail: "Bacharelado, 6º período",
+    detail: "Bacharelado, 7º período",
     current: true,
   },
   {
@@ -126,5 +126,23 @@ export const projects = [
     image: "/project2.png",
     repo: "https://github.com/pantanalstudio/pregnancy-landing-v1",
     live: "https://pregnancy-landing-v1.vercel.app",
+  },
+  {
+    title: "Cavalcante Barbershop PWA",
+    summary:
+      "PWA mobile-first para agendamentos de barbearia, com notificações push e painel de gestão.",
+    tags: ["Next.js", "React", "Tailwind CSS", "Prisma", "PostgreSQL", "PWA", "Vercel"],
+    image: "/project3.png",
+    repo: "https://github.com/usrJosephC/cavalcante-barbershop-pwa",
+    live: "https://cavalcantebarbershop.vercel.app/",
+  },
+  {
+    title: "InterEng Alagoas PWA",
+    summary:
+      "PWA para campeonatos de engenharia, com sorteios, tabelas, mata-mata, agenda, comunidade e área administrativa.",
+    tags: ["Next.js", "React", "Tailwind CSS", "Prisma", "PostgreSQL", "Three.js", "Docker", "PWA"],
+    image: "/project4.png",
+    repo: "https://github.com/usrJosephC/intereng-alagoas-pwa",
+    live: "https://interengalagoas.vercel.app/",
   },
 ];
