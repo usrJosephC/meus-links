@@ -72,6 +72,7 @@ function ProjectCard({ project }) {
             href={project.repo}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={`Código-fonte de ${project.title}`}
             className="inline-flex items-center gap-2 font-mono text-[0.6875rem] tracking-[0.12em] text-mist uppercase transition-colors hover:text-lilac-soft"
           >
             <FaGithub size={14} aria-hidden />
@@ -82,6 +83,7 @@ function ProjectCard({ project }) {
               href={project.live}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={`Visualizar site de ${project.title}`}
               className="inline-flex items-center gap-2 font-mono text-[0.6875rem] tracking-[0.12em] text-mist uppercase transition-colors hover:text-lilac-soft"
             >
               <ExternalLink size={14} aria-hidden />
@@ -117,7 +119,7 @@ export default function Projects() {
           </p>
         </div>
 
-        <div className="hidden shrink-0 gap-2 sm:flex">
+        <div className="flex shrink-0 gap-2">
           {[
             { dir: -1, label: "Projeto anterior", Icon: ChevronLeft },
             { dir: 1, label: "Próximo projeto", Icon: ChevronRight },
